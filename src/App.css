@@ -1,0 +1,102 @@
+/* Sidebar and Layout matching Screenshot */
+.voice-web-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f1f5f9; /* Light grey background from UI */
+  font-family: 'Inter', sans-serif;
+}
+
+.top-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: white;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.main-content-grid {
+  display: grid;
+  grid-template-columns: 300px 1fr 350px; /* Exact 3-column layout */
+  gap: 20px;
+  padding: 20px;
+  flex: 1;
+}
+
+/* Sidebar Services */
+.services-card {
+  background: white;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.service-item {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  border: 1px solid #f1f5f9;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Central Mic Section */
+.center-ai-panel {
+  background: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.mic-aura {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #2563eb 0%, #1e3a8a 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 40px rgba(37, 99, 235, 0.3);
+  cursor: pointer;
+}
+
+/* Transcript/Message Area matching UI */
+.transcript-panel {
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.message-bubble {
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 15px;
+  position: relative;
+}
+
+.user-msg { background: #eff6ff; align-self: flex-end; border: 1px solid #dbeafe; }
+.ai-msg { background: #f8fafc; align-self: flex-start; border: 1px solid #f1f5f9; }
+
+.timestamp { font-size: 10px; color: #94a3b8; margin-bottom: 5px; }
+
+/* Interactive Refund Popup */
+.refund-overlay {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
+  z-index: 100;
+  text-align: center;
+  width: 350px;
+}
